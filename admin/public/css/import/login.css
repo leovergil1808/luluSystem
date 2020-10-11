@@ -1,0 +1,60 @@
+ #wp-reg-admin, #wp-reset{
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+    background-color: #4fa327;
+    height: 100%;
+    padding: 1% 0 1.5% 0;
+}
+
+#wp-login {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 23px;
+    background-color: #4fa327;
+    height: 100%;
+    padding: 1% 0 9.8% 0;
+}
+
+h1.page-title{
+    font-size: 18px;
+    padding: 0px 0px 20px;
+}
+
+#wp-form-login, #wp-form-reg-admin ,#wp-form-reset{
+    width: 20%;
+    height: 10%;
+    background: #fdfdfd;
+    padding: 30px 20px 20px 20px;
+    margin: 10% auto;
+    text-align: center;
+}
+
+#username, #password, #email, #fullname, #tel, #gender {
+    display: block;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    border: none;
+}
+
+#form-reg-admin #btn_reg_admin, #form-login #btn_login, #form-reset #btn_reset{
+    display: block;
+    width: 100%;
+    background:#4fa327;
+    border: none;
+    columns: #fff;
+    padding: 10px 0;
+    margin: 15px 0 10px;
+    cursor: pointer;
+}
+
+#address{
+    display: block;
+    padding: 10px 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    border: none;
+}

@@ -1,0 +1,34 @@
+RewriteEngine On
+RewriteCond  %{REQUEST_FILENAME} !-f
+RewriteCond  %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_URI} !\.(?:css|js|jpe?g|gif|png)$ [NC]
+
+RewriteRule "home.html" index.php
+RewriteRule "post.html" index.php?mod=posts&action=index
+RewriteRule "about.html" index.php?mod=pages&action=detail&id=23
+RewriteRule "login.html" index.php?mod=users&action=login
+RewriteRule "logout.html" index.php?mod=users&action=logout
+RewriteRule "detail.html" index.php?mod=users&action=detail
+RewriteRule "cart.html" index.php?mod=cart&action=index
+RewriteRule "checkout.html" index.php?mod=cart&action=checkout
+RewriteRule "registry.html" index.php?mod=users&action=index
+RewriteRule "reset.html" index.php?mod=users&controller=index&action=resetPass&reset_token
+
+
+RewriteRule ^([a-zA-Z0-9_-]+)-([0-9]+).html$ index.php?mod=products&action=showListProduct&cat_id=$2
+RewriteRule product/([a-zA-Z0-9_-]+) index.php?mod=products&action=detail&id=$2&name=$1
+RewriteRule category-([0-9])/page-([0-9]+) index.php?mod=products&action=showListProduct&cat_id=$1&page=$2
+
+RewriteRule post/([a-zA-Z0-9_-]+)-([0-9]+) index.php?mod=posts&action=detail&id=$2
+RewriteRule posts/page-([0-9]+) index.php?mod=posts&action=index&page=$1
+
+RewriteCond %{QUERY_STRING} (.*) 
+RewriteRule search index.php?mod=search&action=index&%1
+
+
+
+
+
+
+
+
